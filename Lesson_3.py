@@ -84,3 +84,4 @@ salary_from = 120000
 for i in vacancies_hh.find({'$or': [{'min_salary':{'$gte':salary_from}},
                                    {'max_salary':{'$gte':salary_from}}]}):
     pprint(i)
+# на экран вывелось 135 вакансий
